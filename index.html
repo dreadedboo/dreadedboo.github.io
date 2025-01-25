@@ -18,16 +18,30 @@
         a:hover {
             color: hotpink;
         }
+    #background-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
 </style>
 <body>
+    <video id="background-video" autoplay loop muted>
+        <source src="resources\background.mp4" type="video/mp4">
+    </video>
     <h1>dreaded.boo</h1>
     <h2>
         <a href="https://live.dreaded.boo">
             stream
-        </a> | 
+        </a> |
         <a href="https://bsky.app/profile/dreaded.boo">
             bsky
-        </a> | 
+        </a> |
         <a href="https://music.dreaded.boo">
             music
         </a>
