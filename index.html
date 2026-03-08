@@ -7,18 +7,14 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  background: #292929;
 }
 .content {
   flex: 1 0 auto;
 }
-.footer {
-  flex-shrink: 0;
-  background-image: url('resources/footer.gif');
-  background-repeat: repeat;
-  padding: 10px;
-}
 table, th, td {
   border: 5px solid black;
+  background: #888888;
 }
 th, td {
   padding: 15px;
@@ -27,8 +23,9 @@ th, td {
   margin: 0;
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 </style>
 <body>
@@ -64,6 +61,5 @@ th, td {
 		</table>
 	</h3>
 </div>
-<footer class="footer"><br></footer>
 </body>
 </html>
